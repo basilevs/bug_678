@@ -4,7 +4,8 @@
 Docker
 
 ## Test steps
-Run `docker compose up` in the directory with compose.yaml file
+- Replace SWT JARs in `swt` directory with a test subject.
+- Run `docker compose up` in the directory with compose.yaml file
 
 ## Expected result
 
