@@ -1,0 +1,10 @@
+services:
+  test:
+    build:
+      context: base
+    volumes:
+      - ./bug:/mnt/bug
+      - ./swt:/mnt/swt
+    init: true
+    platform: linux/amd64
+    command: xvfb-run --auto-servernum java --class-path=/mnt/swt/* /mnt/bug/Bug678.java
